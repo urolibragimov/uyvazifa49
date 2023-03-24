@@ -1,0 +1,120 @@
+footer {
+  padding: 150px 0 46px;
+}
+footer .footer {
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+}
+
+footer .footer .footer-left {
+  display: grid;
+  grid-row-gap: 25px;
+}
+
+footer .footer .footer-left .footer-logo-img {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+footer .footer .footer-left .footer-icon {
+  display: flex;
+  gap: 16px;
+}
+footer .footer .footer-left .footer-icon img {
+  width: 40px;
+  height: 40px;
+}
+footer .footer .footer-middle {
+  padding: 0 108px 0 161px;
+  display: flex;
+  gap: 129px;
+}
+
+footer .footer .footer-middle h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #22343d;
+}
+footer .footer .footer-middle ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #22343d;
+}
+
+footer .footer .footer-right h2 {
+  margin-bottom: 34px;
+  max-width: 240px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #22343d;
+}
+footer .footer .footer-right input {
+  /* padding: 10px 15px;
+  margin-bottom: 21px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #bcd0e5; */
+}
+footer .footer .footer-right input:focus {
+  /* outline: none;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08); */
+}
+
+footer .footer .footer-right a {
+  padding: 8px 15px;
+  background: #02897a;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+footer .footer-bottom {
+  padding-top: 30px;
+  text-align: center;
+}
+footer .footer-bottom p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #22343d;
+}
+
+@media (max-width: 1000px) {
+  footer .footer {
+    grid-template-columns: 1fr;
+  }
+  footer .footer .footer-left {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  footer .footer .footer-middle {
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  footer .footer .footer-right {
+    display: grid;
+    justify-content: center;
+  }
+  footer .footer .footer-right input {
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 350px) {
+  footer .footer .footer-middle {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+  }
+}
